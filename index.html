@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Converter</h1>
+        
+        <div class="converter">
+            <h2>1. Code to PDF Converter</h2>
+            <textarea id="code-input" placeholder="Enter your code here..."></textarea>
+            <button id="convert-code-pdf-btn">Convert to PDF</button>
+        </div>
+
+        <div class="converter">
+            <h2>2. PDF to Word Converter</h2>
+            <input type="file" id="pdf-input" accept=".pdf">
+            <button id="convert-pdf-word-btn">Convert to Word</button>
+        </div>
+
+        <div class="converter">
+            <h2>3. Word to PDF Converter</h2>
+            <input type="file" id="word-input" accept=".doc,.docx">
+            <button id="convert-word-pdf-btn">Convert to PDF</button>
+        </div>
+    </div>
+    
+    <!-- External JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
